@@ -245,7 +245,7 @@
                                     <form action="/mg/add_mapping.php" method="POST">
                                         <div class="form-group">
                                             <div class="col-12">
-                                                <input  type="text" class="form-control" name="entity" placeholder="add column name">
+                                                <input  type="text" class="form-control" name="entity" placeholder="Add entity name">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -271,14 +271,6 @@
                 </div>
             </div>
             <!-- Content Row -->
-
-            <?php 
-                // if(isset($_POST['create_entity'])){
-                //     echo "<pre>"; print_r($_REQUEST); echo "</pre>";
-                //     echo $_POST['entity'];
-                // }
-                      //die();
-            ?>
 
             <div class="row">
                 <div class="col-xl-12 col-md-12 mb-4">
@@ -539,6 +531,256 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- Sourabh Code Start -->
+            <div class="row">
+                <div class="col-xl-12 col-md-12 mb-4">
+                    <div class="card border-left-primary shadow h-100 py-2" id="users-migration">
+                        <div class="card-body">
+                            <div class="card-body">
+                                <div class="row">
+                                <div class="col-xl-2 col-md-2 mb-2 ">
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Select Source Table</div>
+                                    <form class="py-4">
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>Select Table</option>
+                                                    <option>users</option>
+                                                    <option>users_data</option>
+                                                    <option>users_images_data</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-12">
+                                                    <input  type="text" class="form-control" placeholder="add column name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-12">
+                                                    <input  type="text" class="form-control" placeholder="add column name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-12">
+                                                    <input  type="text" class="form-control" placeholder="add column name">
+                                                </div>
+                                            </div>
+                                            <!-- <div class="form-group">
+                                                <div class="col-12">
+                                                    <input  type="text" class="form-control" placeholder="add column name">
+                                                </div>
+                                            </div> -->
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>u_id</option>
+                                                    <option>user_name</option>
+                                                    <option>last_name</option>
+                                                </select>
+                                            </div>
+                                            <!-- <div class="form-group">
+                                                <div class="col-12">
+                                                    <input  type="text" class="form-control" placeholder="add column name">
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col">
+                                                <button name="submit" type="button" class="btn btn-primary">Add Column</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col">
+                                                <button name="submit" type="button" class="btn btn-primary">Add join</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-xl-3 col-md-3 mb-3 ">
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Select Relation Table</div>
+                                    <form class="py-4">
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>one to one</option>
+                                                    <option>one to many</option>
+                                                    <option>many to one</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>one to one</option>
+                                                    <option>one to many</option>
+                                                    <option>many to one</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>one to one</option>
+                                                    <option>one to many</option>
+                                                    <option>many to one</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>one to one</option>
+                                                    <option>one to many</option>
+                                                    <option>many to one</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>one to many</option>
+                                                    <option>one to many</option>
+                                                    <option>many to one</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                       
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <button name="submit" type="button" class="btn btn-primary">Add Relation</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-xl-7 col-md-7 mb-7 ">
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Select Destination Table</div>
+                                    <form class="py-4">
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>wp_users</option>
+                                                    <option>wp_usermeta</option>
+                                                    <option>wp_post</option>
+                                                </select>
+                                            </div>    
+                                            <div class="form-row">
+                                                <div class="form-group col">
+                                                    <input type="text" class="form-control" placeholder="add column">
+                                                </div>
+                                                <div class="col">
+                                                <label class="checkbox-inline">
+                                                        <input type="checkbox" value="" checked>Primery
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" value="">Forgein Key
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col">
+                                                    <input type="text" class="form-control" placeholder="add column name">
+                                                </div>
+                                                <div class="col">
+                                                <label class="checkbox-inline">
+                                                        <input type="checkbox" value="" checked>Primery
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" value="">Forgein Key
+                                                    </label>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col">
+                                                    <input type="text" class="form-control" placeholder="add column name">
+                                                </div>
+                                                <div class="col">
+                                                <label class="checkbox-inline">
+                                                        <input type="checkbox" value="" checked>Primery
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" value="">Forgein Key
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                            <div class="form-group col">
+                                                    <input type="text" class="form-control" placeholder="table name">
+                                                </div>
+                                                <div class="form-group col">
+                                                    <input type="text" class="form-control" placeholder="add column name">
+                                                </div>
+                                                <div class="form-row">
+                                                <div class="col-6">
+                                                    <button name="submit" type="button" class="btn btn-primary">+</button>
+                                                </div>
+                                            </div>
+                                                <div class="col">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" value="" checked>Primery
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" value="">Forgein Key
+                                                    </label>
+                                                </div>
+                                                
+                                            </div>
+                                            <!-- <div class="form-row">
+                                                <div class="form-group col">
+                                                    <input type="text" class="form-control" placeholder="add column name">
+                                                </div>
+                                                <div class="col">
+                                                <label class="checkbox-inline">
+                                                        <input type="checkbox" value="" checked>Primery
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" value="">Forgein Key
+                                                    </label>
+                                                </div>
+                                            </div> -->
+                                            <!-- <div class="form-group">
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" placeholder="add column name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" placeholder="add column name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" placeholder="add column name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" placeholder="add column name">
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="form-group">
+                                            <div>
+                                                <button name="submit" type="button" class="btn btn-primary">Add Column</button>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="form-group">
+                                            <div>
+                                                <button name="submit" type="button" class="btn btn-primary">Add Join</button>
+                                            </div>
+                                        </div> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sourabh Code End -->
+
             <!-- Content Row -->
 
             <!-- Content Row -->
