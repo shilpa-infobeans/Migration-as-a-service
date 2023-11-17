@@ -541,10 +541,10 @@
                             <div class="card-body">
                                 <div class="row">
                                 <div class="col-xl-2 col-md-2 mb-2 ">
-                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Select Source Table</div>
+                                    <!-- <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Select Source Table</div> -->
                                     <form class="py-4">
                                         <div class="form-group">
-                                            <div class="form-group">
+                                            <!-- <div class="form-group">
                                                 <select class="form-control">
                                                     <option>Select Table</option>
                                                     <option>users</option>
@@ -566,24 +566,14 @@
                                                 <div class="col-12">
                                                     <input  type="text" class="form-control" placeholder="add column name">
                                                 </div>
-                                            </div>
-                                            <!-- <div class="form-group">
-                                                <div class="col-12">
-                                                    <input  type="text" class="form-control" placeholder="add column name">
-                                                </div>
                                             </div> -->
                                             <div class="form-group">
                                                 <select class="form-control">
-                                                    <option>u_id</option>
-                                                    <option>user_name</option>
-                                                    <option>last_name</option>
+                                                    <option>Select Table</option>
+                                                    <option>Table 1</option>
+                                                    <option>Table 2</option>
                                                 </select>
                                             </div>
-                                            <!-- <div class="form-group">
-                                                <div class="col-12">
-                                                    <input  type="text" class="form-control" placeholder="add column name">
-                                                </div>
-                                            </div> -->
                                         </div>
                                         <div class="form-group row">
                                             <div class="col">
@@ -598,9 +588,9 @@
                                     </form>
                                 </div>
                                 <div class="col-xl-3 col-md-3 mb-3 ">
-                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Select Relation Table</div>
+                                    <!-- <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Select Relation Table</div> -->
                                     <form class="py-4">
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <div class="form-group">
                                                 <select class="form-control">
                                                     <option>one to one</option>
@@ -635,13 +625,13 @@
                                                     <option>many to one</option>
                                                 </select>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="form-group">
                                             <div class="form-group">
                                                 <select class="form-control">
-                                                    <option>one to many</option>
-                                                    <option>one to many</option>
-                                                    <option>many to one</option>
+                                                    <option>On column</option>
+                                                    <option>column 1</option>
+                                                    <option>column 2</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -655,30 +645,30 @@
                                     </form>
                                 </div>
                                 <div class="col-xl-7 col-md-7 mb-7 ">
-                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Select Destination Table</div>
+                                    <!-- <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Select Destination Table</div> -->
                                     <form class="py-4">
                                         <div class="form-group">
-                                            <div class="form-group">
+                                            <!-- <div class="form-group">
                                                 <select class="form-control">
                                                     <option>wp_users</option>
                                                     <option>wp_usermeta</option>
                                                     <option>wp_post</option>
                                                 </select>
-                                            </div>    
-                                            <div class="form-row">
-                                                <div class="form-group col">
+                                            </div>     -->
+                                            <!-- <div class="form-row"> -->
+                                                <!-- <div class="form-group col">
                                                     <input type="text" class="form-control" placeholder="add column">
-                                                </div>
-                                                <div class="col">
+                                                </div> -->
+                                                <!-- <div class="col">
                                                 <label class="checkbox-inline">
                                                         <input type="checkbox" value="" checked>Primery
                                                     </label>
                                                     <label class="checkbox-inline">
                                                         <input type="checkbox" value="">Forgein Key
                                                     </label>
-                                                </div>
-                                            </div>
-                                            <div class="form-row">
+                                                </div> -->
+                                            <!-- </div> -->
+                                            <!-- <div class="form-row">
                                                 <div class="form-group col">
                                                     <input type="text" class="form-control" placeholder="add column name">
                                                 </div>
@@ -691,8 +681,8 @@
                                                     </label>
                                                 </div>
                                                 
-                                            </div>
-                                            <div class="form-row">
+                                            </div> -->
+                                            <!-- <div class="form-row">
                                                 <div class="form-group col">
                                                     <input type="text" class="form-control" placeholder="add column name">
                                                 </div>
@@ -704,7 +694,7 @@
                                                         <input type="checkbox" value="">Forgein Key
                                                     </label>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <div class="form-row">
                                             <div class="form-group col">
                                                     <input type="text" class="form-control" placeholder="table name">
@@ -727,50 +717,12 @@
                                                 </div>
                                                 
                                             </div>
-                                            <!-- <div class="form-row">
-                                                <div class="form-group col">
-                                                    <input type="text" class="form-control" placeholder="add column name">
-                                                </div>
-                                                <div class="col">
-                                                <label class="checkbox-inline">
-                                                        <input type="checkbox" value="" checked>Primery
-                                                    </label>
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" value="">Forgein Key
-                                                    </label>
-                                                </div>
-                                            </div> -->
-                                            <!-- <div class="form-group">
-                                                <div class="col-12">
-                                                    <input type="text" class="form-control" placeholder="add column name">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="col-12">
-                                                    <input type="text" class="form-control" placeholder="add column name">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="col-12">
-                                                    <input type="text" class="form-control" placeholder="add column name">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="col-12">
-                                                    <input type="text" class="form-control" placeholder="add column name">
-                                                </div>
-                                            </div> -->
                                         </div>
                                         <div class="form-group">
                                             <div>
                                                 <button name="submit" type="button" class="btn btn-primary">Add Column</button>
                                             </div>
                                         </div>
-                                        <!-- <div class="form-group">
-                                            <div>
-                                                <button name="submit" type="button" class="btn btn-primary">Add Join</button>
-                                            </div>
-                                        </div> -->
                                     </form>
                                 </div>
                             </div>
