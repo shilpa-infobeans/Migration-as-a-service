@@ -567,6 +567,11 @@
                                                     <input  type="text" class="form-control" placeholder="add column name">
                                                 </div>
                                             </div> -->
+                                            <div class="form-group row">
+                                                <div class="col">
+                                                    <button name="submit" type="button" class="btn btn-primary">Add join</button>
+                                                </div>
+                                            </div>
                                             <div class="form-group">
                                                 <select class="form-control">
                                                     <option>Select Table</option>
@@ -580,11 +585,7 @@
                                                 <button name="submit" type="button" class="btn btn-primary">Add Column</button>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
-                                            <div class="col">
-                                                <button name="submit" type="button" class="btn btn-primary">Add join</button>
-                                            </div>
-                                        </div>
+                                        
                                     </form>
                                 </div>
                                 <div class="col-xl-3 col-md-3 mb-3 ">
