@@ -293,6 +293,7 @@
             </div>
             <!-- Content Row -->
 
+            <!-- start:One to One -->
             <div class="row">
                 <div class="col-xl-12 col-md-12 mb-4">
                     <div class="card border-left-primary shadow h-100 py-2" id="users-migration">
@@ -300,7 +301,8 @@
                             <form>
                                 <div class="form-group row">
                                     <div class="col-12 textcenter">
-                                        <p class="h3">Example :- One to one Migration</p>
+                                        <p class="h3">Entity-1</p>
+                                        <small>Example :- One to one Migration</small>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -334,45 +336,22 @@
                                     <div class="col-md-3">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                             Select Column</div>
-                                        <select class="form-control">
-                                            <option>Select column</option>
-                                            <option>id</option>
-                                            <option>name</option>
-                                            <option>pass</option>
-                                        </select>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                             Select Relation</div>
-                                        <select class="form-control">
-                                            <option>Select Relation</option>
-                                            <option>one to one</option>
-                                            <option>one to many</option>
-                                            <option>many to one</option>
-                                            <option>many to many</option>
-                                        </select>
                                     </div>
 
                                     <div class="col-md-3">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                             Select Column</div>
-                                        <select class="form-control">
-                                            <option>Select column</option>
-                                            <option>user_id</option>
-                                            <option>user_name</option>
-                                            <option>user_password</option>
-                                        </select>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                             Select Key</div>
-                                        <select class="form-control">
-                                            <option>Select Key</option>
-                                            <option>Primary</option>
-                                            <option>Foreign</option>
-                                        </select>
                                     </div>
                                 </div>
+                                <?php for($i=0;$i<=2;$i++): ?>
                                 <div class="row">
                                     <div class="col-md-3">
                                         <select class="form-control">
@@ -406,105 +385,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <select class="form-control">
-                                            <option>Select column</option>
-                                            <option>id</option>
-                                            <option>name</option>
-                                            <option>password</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <select class="form-control">
-                                            <option>Select Relation</option>
-                                            <option>one to one</option>
-                                            <option>one to many</option>
-                                            <option>many to one</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <select class="form-control">
-                                            <option>Select column</option>
-                                            <option>user_id</option>
-                                            <option>user_name</option>
-                                            <option>user_password</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <select class="form-control">
-                                            <option>Select Key</option>
-                                            <option>Primary</option>
-                                            <option>Foreign</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <select class="form-control">
-                                            <option>Select column</option>
-                                            <option>id</option>
-                                            <option>name</option>
-                                            <option>password</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <select class="form-control">
-                                            <option>Select Relation</option>
-                                            <option>one to one</option>
-                                            <option>one to many</option>
-                                            <option>many to one</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <select class="form-control">
-                                            <option>Select column</option>
-                                            <option>user_id</option>
-                                            <option>user_name</option>
-                                            <option>user_password</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <select class="form-control">
-                                            <option>Select Key</option>
-                                            <option>Primary</option>
-                                            <option>Foreign</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <select class="form-control">
-                                            <option>Select column</option>
-                                            <option>id</option>
-                                            <option>name</option>
-                                            <option>password</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <select class="form-control">
-                                            <option>Select Relation</option>
-                                            <option>one to one</option>
-                                            <option>one to many</option>
-                                            <option>many to one</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <select class="form-control">
-                                            <option>Select column</option>
-                                            <option>user_id</option>
-                                            <option>user_name</option>
-                                            <option>user_password</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <select class="form-control">
-                                            <option>Select Key</option>
-                                            <option>Primary</option>
-                                            <option>Foreign</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                <?php endfor; ?>
                                 <div class="row">
                                     <div class="col-md-3 offset-md-9 text-right"><button class="btn btn-primary">Add
                                             Row</button></div>
@@ -514,7 +395,9 @@
                     </div>
                 </div>
             </div>
+            <!-- End:One to One -->
 
+            <!-- start:One to many -->
             <div class="row">
                 <div class="col-xl-12 col-md-12 mb-4">
                     <div class="card border-left-primary shadow h-100 py-2" id="users-migration">
@@ -522,7 +405,8 @@
                             <form>
                                 <div class="form-group row">
                                     <div class="col-12 textcenter">
-                                        <p class="h3">Example :- One to many Migration</p>
+                                        <p class="h3">Entity-2</p>
+                                        <small>Example :- One to many Migration</small>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -553,48 +437,27 @@
                                         </select></div>
                                 </div>
 
-
+                                
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                             Select Column</div>
-                                        <select class="form-control">
-                                            <option>Select Column</option>
-                                            <option>id</option>
-                                            <option>name</option>
-                                            <option>password</option>
-                                        </select>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Select Relation</div>
-                                        <select class="form-control">
-                                            <option>Select Relation</option>
-                                            <option>one to one</option>
-                                            <option>one to many</option>
-                                            <option>many to one</option>
-                                        </select>
+                                            Relation Type</div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                             Select Column</div>
-                                        <select class="form-control">
-                                            <option>Select Column</option>
-                                            <option>user_id</option>
-                                            <option>user_name</option>
-                                            <option>user_password</option>
-                                        </select>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                             Select Key</div>
-                                        <select class="form-control">
-                                            <option>Select Key</option>
-                                            <option>Primary</option>
-                                            <option>Foreign</option>
-                                        </select>
                                     </div>
                                 </div>
+                                
+                                <?php for( $i=0;$i<2; $i++ ):?>
                                 <div class="row">
                                     <div class="col-md-3">
                                         <select class="form-control">
@@ -628,23 +491,26 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="row row row-cols-1 row-cols-sm-2 row-cols-md-5">
-                                    <div class="col">
+                                <?php endfor; ?>
+
+                                <div class="row">
+                                    <div class="col-md-3">
                                         <select class="form-control">
-                                            <option>Select Column</option>
+                                            <option>Select column</option>
                                             <option>id</option>
                                             <option>name</option>
                                             <option>password</option>
                                         </select>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-md-3">
                                         <select class="form-control">
-                                            <option>one to many</option>
+                                            <option>Select Relation</option>
                                             <option>one to one</option>
+                                            <option selected="selected">one to many</option>
                                             <option>many to one</option>
                                         </select>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-md-2">
                                         <select class="form-control">
                                             <option>Select Table</option>
                                             <option>user_id</option>
@@ -652,15 +518,15 @@
                                             <option>user_password</option>
                                         </select>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-md-2">
                                         <select class="form-control">
-                                            <option>Select Column</option>
-                                            <option>user_id</option>
-                                            <option>user_name</option>
-                                            <option>user_password</option>
+                                            <option>Select column</option>
+                                            <option>id</option>
+                                            <option>name</option>
+                                            <option>password</option>
                                         </select>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-md-2">
                                         <select class="form-control">
                                             <option>Select Key</option>
                                             <option>Primary</option>
@@ -668,7 +534,6 @@
                                         </select>
                                     </div>
                                 </div>
-
                                 <div class="row">
                                     <div class="col-md-3 offset-md-9 text-right"><button class="btn btn-primary">Add
                                             Row</button></div>
@@ -678,7 +543,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- End:One to many -->
             <div class="row">
                 <div class="col-xl-12 col-md-12 mb-4">
                     <div class="card border-left-primary shadow h-100 py-2" id="users-migration">
