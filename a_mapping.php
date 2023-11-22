@@ -437,7 +437,7 @@
                                         </select></div>
                                 </div>
 
-                                
+
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
@@ -456,7 +456,7 @@
                                             Select Key</div>
                                     </div>
                                 </div>
-                                
+
                                 <?php for( $i=0;$i<2; $i++ ):?>
                                 <div class="row">
                                     <div class="col-md-3">
@@ -544,7 +544,7 @@
                 </div>
             </div>
             <!-- End:One to many -->
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-xl-12 col-md-12 mb-4">
                     <div class="card border-left-primary shadow h-100 py-2" id="users-migration">
                         <div class="card-body">
@@ -675,7 +675,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
             <!-- Sourabh Code Start -->
@@ -686,11 +686,152 @@
                             <div class="card-body">
                                 <div class="form-group row">
                                     <div class="col-12 textcenter">
-                                        <button type="button" class="btn btn-primary">Many to one / Many to
-                                            many</button>
+                                        <p class="h3">Entity-3</p>
+                                        <small>Example :- One to many Migration</small>
                                     </div>
                                 </div>
                                 <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            Select Source Table</div>
+                                    </div>
+                                    <div class="col-md-3">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            Select Destination Table</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <select class="form-control">
+                                            <option>users</option>
+                                            <option>users_data</option>
+                                            <option>users_images_data</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6"><select class="form-control">
+                                            <option>wp_users</option>
+                                            <option>wp_usermeta</option>
+                                            <option>wp_post</option>
+                                        </select></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            Select Column</div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            Relation Type</div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            Select Column</div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            Select Key</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <select class="form-control">
+                                            <option>Select column</option>
+                                            <option>id</option>
+                                            <option>name</option>
+                                            <option>password</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select class="form-control">
+                                            <option>One to Many</option>
+                                            <option>one to one</option>
+                                            <option selected="selected">Many to Many</option>
+                                            <option>many to one</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select class="form-control">
+                                            <option>Select Table</option>
+                                            <option>user_id</option>
+                                            <option>user_name</option>
+                                            <option>user_password</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select class="form-control">
+                                            <option>Select column</option>
+                                            <option>id</option>
+                                            <option>name</option>
+                                            <option>password</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select class="form-control">
+                                            <option>Select Key</option>
+                                            <option>Primary</option>
+                                            <option>Foreign</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <button name="add_join" type="button" class="btn btn-primary">Add
+                                            Join</button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <select class="form-control">
+                                            <option>Select Table</option>
+                                            <option>Users</option>
+                                            <option>Post Content</option>
+                                            <option>Post Meta</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select class="form-control">
+                                            <option>On column</option>
+                                            <option selected="selected">column 1</option>
+                                            <option>column 2</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select class="form-control">
+                                            <option>Select Table</option>
+                                            <option>user_id</option>
+                                            <option>user_name</option>
+                                            <option>user_password</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select class="form-control">
+                                            <option>Select column</option>
+                                            <option>id</option>
+                                            <option>name</option>
+                                            <option>password</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button name="submit" type="button" class="btn btn-primary">+</button>
+                                    </div>
+                                    <!-- <div class="col-md-2">
+                                        <select class="form-control">
+                                            <option>Select Key</option>
+                                            <option>Primary</option>
+                                            <option>Foreign</option>
+                                        </select>
+                                    </div> -->
+
+                                </div>
+
+
+                                <!-- <div class="row">
                                     <div class="col-xl-2 col-md-2 mb-2 ">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Select
                                             Source Table</div>
@@ -710,16 +851,7 @@
                                                             placeholder="add column name">
                                                     </div>
                                                 </div>
-                                                <!-- <div class="form-group">
-                                                <div class="col-12">
-                                                    <input  type="text" class="form-control" placeholder="add column name">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="col-12">
-                                                    <input  type="text" class="form-control" placeholder="add column name">
-                                                </div>
-                                            </div> -->
+
                                                 <div class="form-group row">
                                                     <div class="col">
                                                         <button name="submit" type="button" class="btn btn-primary">Add
@@ -765,24 +897,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <!-- <div class="form-group">
-                                            <div class="form-group">
-                                                <select class="form-control">
-                                                    <option>one to one</option>
-                                                    <option>one to many</option>
-                                                    <option>many to one</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="form-group">
-                                                <select class="form-control">
-                                                    <option>one to one</option>
-                                                    <option>one to many</option>
-                                                    <option>many to one</option>
-                                                </select>
-                                            </div>
-                                        </div> -->
+
                                             <div class="form-group">
                                                 <div class="form-group">
                                                     <button name="submit" type="button" class="btn btn-primary">Add
@@ -798,9 +913,6 @@
                                                     </select>
                                                 </div>
                                             </div>
-
-
-
                                         </form>
                                     </div>
                                     <div class="col-xl-7 col-md-7 mb-7 ">
@@ -815,46 +927,6 @@
                                                         <option>wp_post</option>
                                                     </select>
                                                 </div>
-                                                <!-- <div class="form-row"> -->
-                                                <!-- <div class="form-group col">
-                                                    <input type="text" class="form-control" placeholder="add column">
-                                                </div> -->
-                                                <!-- <div class="col">
-                                                <label class="checkbox-inline">
-                                                        <input type="checkbox" value="" checked>Primery
-                                                    </label>
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" value="">Forgein Key
-                                                    </label>
-                                                </div> -->
-                                                <!-- </div> -->
-                                                <!-- <div class="form-row">
-                                                <div class="form-group col">
-                                                    <input type="text" class="form-control" placeholder="add column name">
-                                                </div>
-                                                <div class="col">
-                                                <label class="checkbox-inline">
-                                                        <input type="checkbox" value="" checked>Primery
-                                                    </label>
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" value="">Forgein Key
-                                                    </label>
-                                                </div>
-                                                
-                                            </div> -->
-                                                <!-- <div class="form-row">
-                                                <div class="form-group col">
-                                                    <input type="text" class="form-control" placeholder="add column name">
-                                                </div>
-                                                <div class="col">
-                                                <label class="checkbox-inline">
-                                                        <input type="checkbox" value="" checked>Primery
-                                                    </label>
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" value="">Forgein Key
-                                                    </label>
-                                                </div>
-                                            </div> -->
                                                 <div class="form-row">
                                                     <div class="form-group col">
                                                         <input type="text" class="form-control"
@@ -935,7 +1007,7 @@
                                                     </div>
                                         </form>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
