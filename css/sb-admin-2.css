@@ -11282,3 +11282,4 @@ body.sidebar-toggled footer.sticky-footer {
 .col-12.textcenter {
   text-align: center !important;
 }
+.card-body form .col-md-3,.card-body form .col-md-6{padding:6px}
