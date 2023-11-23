@@ -687,7 +687,7 @@
                                 <div class="form-group row">
                                     <div class="col-12 textcenter">
                                         <p class="h3">Entity-3</p>
-                                        <small>Example :- One to many Migration</small>
+                                        <small>Example :- Many to Many Migration</small>
                                     </div>
                                 </div>
                                 <div class="row">
